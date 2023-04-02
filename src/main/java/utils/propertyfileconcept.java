@@ -8,20 +8,22 @@ import java.util.Properties;
 
 public class propertyfileconcept {
 	
-	String filepath=System.getProperty("user.dir")+"//input//env.properties";
-	public void propertyconcepts() throws IOException
+	String filepath=System.getProperty("user.dir")+"//Environment//env.properties";
+	public Properties propertyconcepts() throws IOException
 	{
 		File f = new File(filepath);
 		FileInputStream FI = new FileInputStream(f);
 		Properties p = new Properties();
 		p.load(FI);
-		System.out.println(p.getProperty("name"));
+		return p;
+		/*System.out.println(p.getProperty("name"));
 		System.out.println(p.getProperty("age"));
 		int newval=Integer.parseInt(p.getProperty("age"));
 		
 		System.out.println(p.getProperty("email"));
 		p.setProperty("education", "B.tech");
-		System.out.println(p.getProperty("education"));
+		System.out.println(p.getProperty("education"));*/
+		
 	}
 
 	public static void main(String[] args) throws IOException {
