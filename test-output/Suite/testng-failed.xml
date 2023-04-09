@@ -7,7 +7,7 @@
         <methods>
           <include name="EnterURL"/>
           <include name="TearDown"/>
-          <include name="FacebookLoginandLogout"/>
+          <include name="FacebookInvalidLogin"/>
           <include name="browserlaunch"/>
         </methods>
       </class> <!-- Testcase.FacebookLoginandLogout -->

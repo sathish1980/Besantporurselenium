@@ -10,6 +10,7 @@ import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelfileTest {
 	static Object s;
@@ -22,11 +23,11 @@ public class ExcelfileTest {
 		FileInputStream fs = new FileInputStream(F);
 		//(.xlsx)
 		
-		//XSSFWorkbook wbk= new XSSFWorkbook(fs);
+		XSSFWorkbook wbk= new XSSFWorkbook(fs);
 		//or (.xls)
-		HSSFWorkbook hsf = new HSSFWorkbook(fs);
+		//HSSFWorkbook hsf = new HSSFWorkbook(fs);
 		
-		Sheet sh=hsf.getSheet(Sheetname);
+		Sheet sh=wbk.getSheet(Sheetname);
 		//Sheet sh=wbk.getSheetAt(1);
 		
 		//int totalusedrows=sh.getLastRowNum();
@@ -49,7 +50,7 @@ public class ExcelfileTest {
 			}
 			
 		}
-		hsf.close();
+		wbk.close();
 		fs.close();
 		return excelreadarray;
 	}

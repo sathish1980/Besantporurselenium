@@ -49,5 +49,11 @@ public class commonActions {
 		
 	}
 
+	public void WaitForElementToBePresent(WebDriver driver, By waitElement)
+	{
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(waitElement));
+		
+	}
 
 }
