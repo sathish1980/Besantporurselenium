@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Test</title>
+<title>TestNG:  SIT</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Test</h2><table border='1' align="center">
+<h2 align='center'>SIT</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 16 14:22:16 IST 2023</td>
+<td>Started on:</td><td>Sun Apr 16 14:41:22 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>41 seconds (41024 ms)</td>
+<tr><td>Total time:</td><td>74 seconds (74128 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,17 +77,21 @@ function toggleAllBoxes() {
 <tr>
 <td title='Testcase.FacebookLoginandLogout.FacebookInvalidLogin()'><b>FacebookInvalidLogin</b><br>Test class: Testcase.FacebookLoginandLogout</td>
 <td><div><pre>java.lang.AssertionError: expected [The email address or mobile number you entered isn&apos;t connected to an account. Find your account and log in.] but found [The email address or mobile number you entered isn&apos;t connected to an account. Create a new Facebook account.]
-	at Testcase.FacebookLoginandLogout.FacebookInvalidLogin(FacebookLoginandLogout.java:94)
+	at Testcase.FacebookLoginandLogout.FacebookInvalidLogin(FacebookLoginandLogout.java:98)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace373299466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace373299466'><pre>java.lang.AssertionError: expected [The email address or mobile number you entered isn&apos;t connected to an account. Find your account and log in.] but found [The email address or mobile number you entered isn&apos;t connected to an account. Create a new Facebook account.]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1741097239", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1741097239'><pre>java.lang.AssertionError: expected [The email address or mobile number you entered isn&apos;t connected to an account. Find your account and log in.] but found [The email address or mobile number you entered isn&apos;t connected to an account. Create a new Facebook account.]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
 	at org.testng.Assert.assertEquals(Assert.java:639)
-	at Testcase.FacebookLoginandLogout.FacebookInvalidLogin(FacebookLoginandLogout.java:94)
+	at Testcase.FacebookLoginandLogout.FacebookInvalidLogin(FacebookLoginandLogout.java:98)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -104,21 +108,16 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
 	at org.testng.TestRunner.run(TestRunner.java:596)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
 </pre></div></td>
-<td>4</td>
-<td>Testcase.FacebookLoginandLogout@3578436e</td></tr>
+<td>5</td>
+<td>Testcase.FacebookLoginandLogout@543788f3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -130,23 +129,23 @@ function toggleAllBoxes() {
 <tr>
 <td title='Testcase.FacebookLoginandLogout.FacebookLoginandLogout()'><b>FacebookLoginandLogout</b><br>Test class: Testcase.FacebookLoginandLogout<br>Parameters: kumar.sathish189@gmail.com, Admin@123</td>
 <td></td>
-<td>8</td>
-<td>Testcase.FacebookLoginandLogout@3578436e</td></tr>
+<td>20</td>
+<td>Testcase.FacebookLoginandLogout@543788f3</td></tr>
 <tr>
 <td title='Testcase.FacebookLoginandLogout.FacebookLoginandLogout()'><b>FacebookLoginandLogout</b><br>Test class: Testcase.FacebookLoginandLogout<br>Parameters: kumar.sathish189@gmail.com, Admin@123</td>
 <td></td>
-<td>8</td>
-<td>Testcase.FacebookLoginandLogout@3578436e</td></tr>
+<td>20</td>
+<td>Testcase.FacebookLoginandLogout@543788f3</td></tr>
 <tr>
 <td title='Testcase.FacebookLoginandLogout.FacebookLoginandLogout()'><b>FacebookLoginandLogout</b><br>Test class: Testcase.FacebookLoginandLogout<br>Parameters: kumar.sathish189@gmail.com, Admin@123</td>
 <td></td>
-<td>9</td>
-<td>Testcase.FacebookLoginandLogout@3578436e</td></tr>
+<td>10</td>
+<td>Testcase.FacebookLoginandLogout@543788f3</td></tr>
 <tr>
 <td title='Testcase.FacebookLoginandLogout.FacebookLoginandLogout()'><b>FacebookLoginandLogout</b><br>Test class: Testcase.FacebookLoginandLogout<br>Parameters: kumar.sathish189@gmail.com, Admin@123</td>
 <td></td>
-<td>8</td>
-<td>Testcase.FacebookLoginandLogout@3578436e</td></tr>
+<td>11</td>
+<td>Testcase.FacebookLoginandLogout@543788f3</td></tr>
 </table><p>
 </body>
 </html>

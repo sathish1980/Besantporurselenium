@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">10 methods, 2 failed,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
                     <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Testcase.FacebookLoginandLogout" hash-for-method="FacebookInvalidLogin">FacebookInvalidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Testcase.FacebookLoginandLogout" hash-for-method="FacebookInvalidLogin">FacebookInvalidLogin</a> <!-- method navigator-link -->
@@ -116,6 +121,26 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Testcase.FacebookLoginandLogout" hash-for-method="FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)">FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Testcase.FacebookLoginandLogout" hash-for-method="FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)">FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Testcase.FacebookLoginandLogout" hash-for-method="FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)">FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Testcase.FacebookLoginandLogout" hash-for-method="FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)">FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Testcase.FacebookLoginandLogout" hash-for-method="FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)">FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)</a> <!-- method navigator-link -->
@@ -160,9 +185,29 @@
                   </a> <!-- FacebookInvalidLogin -->
                   <span class="method-name">FacebookInvalidLogin</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [The email address or mobile number you entered isn&apos;t connected to an account. Find your account and log in.] but found [The email address or mobile number you entered isn&apos;t connected to an account. Create a new Facebook account.]
-	at Testcase.FacebookLoginandLogout.FacebookInvalidLogin(FacebookLoginandLogout.java:82)
+	at Testcase.FacebookLoginandLogout.FacebookInvalidLogin(FacebookLoginandLogout.java:98)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 33 stack frames
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FacebookInvalidLogin">
+                  </a> <!-- FacebookInvalidLogin -->
+                  <span class="method-name">FacebookInvalidLogin</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The email address or mobile number you entered isn&apos;t connected to an account. Find your account and log in.] but found [The email address or mobile number you entered isn&apos;t connected to an account. Create a new Facebook account.]
+	at Testcase.FacebookLoginandLogout.FacebookInvalidLogin(FacebookLoginandLogout.java:98)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 24 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -206,6 +251,38 @@
                   <span class="parameters">(kumar.sathish189@gmail.com, Admin@123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)">
+                  </a> <!-- FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123) -->
+                  <span class="method-name">FacebookLoginandLogout</span>
+                  <span class="parameters">(kumar.sathish189@gmail.com, Admin@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)">
+                  </a> <!-- FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123) -->
+                  <span class="method-name">FacebookLoginandLogout</span>
+                  <span class="parameters">(kumar.sathish189@gmail.com, Admin@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)">
+                  </a> <!-- FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123) -->
+                  <span class="method-name">FacebookLoginandLogout</span>
+                  <span class="parameters">(kumar.sathish189@gmail.com, Admin@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)">
+                  </a> <!-- FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123) -->
+                  <span class="method-name">FacebookLoginandLogout</span>
+                  <span class="parameters">(kumar.sathish189@gmail.com, Admin@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
@@ -217,12 +294,19 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Sanity&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Testcase.FacebookLoginandLogout&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Sanity --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;SIT&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Testcase.FacebookLoginandLogout&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SIT --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -234,7 +318,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Sanity (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SIT (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -260,32 +347,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'FacebookLoginandLogout')
 data.setCell(0, 2, 'Testcase.FacebookLoginandLogout')
-data.setCell(0, 3, 10202);
+data.setCell(0, 3, 20777);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'FacebookLoginandLogout')
 data.setCell(1, 2, 'Testcase.FacebookLoginandLogout')
-data.setCell(1, 3, 9894);
+data.setCell(1, 3, 20705);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'FacebookLoginandLogout')
 data.setCell(2, 2, 'Testcase.FacebookLoginandLogout')
-data.setCell(2, 3, 8951);
+data.setCell(2, 3, 13922);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'FacebookLoginandLogout')
 data.setCell(3, 2, 'Testcase.FacebookLoginandLogout')
-data.setCell(3, 3, 8718);
+data.setCell(3, 3, 11135);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'FacebookInvalidLogin')
+data.setCell(4, 1, 'FacebookLoginandLogout')
 data.setCell(4, 2, 'Testcase.FacebookLoginandLogout')
-data.setCell(4, 3, 4358);
+data.setCell(4, 3, 10189);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'FacebookLoginandLogout')
+data.setCell(5, 2, 'Testcase.FacebookLoginandLogout')
+data.setCell(5, 3, 9112);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'FacebookLoginandLogout')
+data.setCell(6, 2, 'Testcase.FacebookLoginandLogout')
+data.setCell(6, 3, 8985);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'FacebookLoginandLogout')
+data.setCell(7, 2, 'Testcase.FacebookLoginandLogout')
+data.setCell(7, 3, 8737);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'FacebookInvalidLogin')
+data.setCell(8, 2, 'Testcase.FacebookLoginandLogout')
+data.setCell(8, 3, 5525);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'FacebookInvalidLogin')
+data.setCell(9, 2, 'Testcase.FacebookLoginandLogout')
+data.setCell(9, 3, 5249);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 42 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -312,41 +419,63 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">Testcase.FacebookLoginandLogout</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">browserlaunch</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
-                <span class="method-name">EnterURL</span>
-                <span class="method-start">2043 ms</span>
+                <span class="method-name">EnterURL(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">EnterURL(edge)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)</span>
-                <span class="method-start">3255 ms</span>
+                <span class="method-start">4020 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)</span>
-                <span class="method-start">13151 ms</span>
+                <span class="method-start">5789 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)</span>
-                <span class="method-start">23354 ms</span>
+                <span class="method-start">17945 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)</span>
-                <span class="method-start">32073 ms</span>
+                <span class="method-start">26567 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)</span>
+                <span class="method-start">27058 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)</span>
+                <span class="method-start">35796 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">FacebookInvalidLogin</span>
-                <span class="method-start">41026 ms</span>
+                <span class="method-start">44783 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)</span>
+                <span class="method-start">47273 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FacebookLoginandLogout(kumar.sathish189@gmail.com, Admin@123)</span>
+                <span class="method-start">57463 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">FacebookInvalidLogin</span>
+                <span class="method-start">68599 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TearDown</span>
-                <span class="method-start">45400 ms</span>
+                <span class="method-start">74131 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

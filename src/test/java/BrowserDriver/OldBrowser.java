@@ -17,25 +17,13 @@ import org.openqa.selenium.safari.SafariDriver;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
-public class Browser {
+public class OldBrowser {
 	
-	//public static WebDriver driver;
+	public static WebDriver driver;
 	public static ExtentReports report;
 	public static ExtentTest test;
 	//private String reportPath=System.getProperty("user.dir")+"\\Reports\\";
 	public String reportPath ="C:\\Users\\sathishkumar\\eclipse-workspace\\besantporurselenium\\";
-	public static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
-	 
-	public void setdriver(WebDriver driver)
-	{
-		this.driver.set(driver);
-	}
-		
-	public WebDriver getdriver()
-	{
-		return this.driver.get();
-	}
-	
 	public void launch(String browserName)
 	{
 		
@@ -45,18 +33,18 @@ public class Browser {
 			options.addArguments("start-maximized");
 			options.addArguments("--disable-Notifications");
 			//options.addArguments("--incognito");
-			setdriver(new ChromeDriver(options));
+			driver = new ChromeDriver(options);
 		}
 		else if (browserName.equalsIgnoreCase("Edge"))
 		{
 			EdgeOptions options = new EdgeOptions();
 			options.addArguments("start-maximized");
 			options.addArguments("--disable-Notifications");
-			setdriver(new EdgeDriver(options));
+			driver = new EdgeDriver(options);
 		}
 		else if (browserName.equalsIgnoreCase("Safari"))
 		{
-			setdriver( new SafariDriver());
+			driver = new SafariDriver();
 		}
 		report = new ExtentReports(reportPath+"Report//extentreport.html",true);
 		test= report.startTest("Facebook Automation report");	
